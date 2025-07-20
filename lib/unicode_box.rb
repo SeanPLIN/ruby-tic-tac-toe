@@ -17,6 +17,10 @@ class UnicodeBox
     box_arr[1][1] = char
   end
 
+  def get
+    box_arr[1][1]
+  end
+
   def get_row(row)
     box_arr[row]
   rescue StandardError
