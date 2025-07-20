@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'lib/board'
+require_relative 'lib/unicode_grid'
 
-board = Board.new
-
-p board.raw_board
+grid = UnicodeGrid.new(3, 3)
+grid.print
