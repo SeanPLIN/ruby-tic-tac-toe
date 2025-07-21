@@ -3,7 +3,8 @@
 require_relative 'lib/game'
 
 game = Game.new
-game.computer_turn
-game.print_board
-game.player_turn
-game.print_board
+
+until game.finished?
+  game.player_turn
+  game.computer_turn
+end

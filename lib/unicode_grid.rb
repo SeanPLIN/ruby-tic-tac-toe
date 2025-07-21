@@ -19,6 +19,10 @@ class UnicodeGrid
     @grid[grid_y][grid_x].set(value)
   end
 
+  def get(grid_x, grid_y)
+    @grid[grid_y][grid_x].get
+  end
+
   private
 
   def print_row(row)
