@@ -6,5 +6,5 @@ game = Game.new
 
 until game.finished?
   game.player_turn
-  game.computer_turn
+  game.computer_turn unless game.finished?
 end
